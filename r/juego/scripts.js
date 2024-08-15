@@ -1,12 +1,12 @@
 const cardsArray = [
-    { name: 'card1', img: 'https://via.placeholder.com/100x100.png?text=1' },
-    { name: 'card2', img: 'https://via.placeholder.com/100x100.png?text=2' },
-    { name: 'card3', img: 'https://via.placeholder.com/100x100.png?text=3' },
-    { name: 'card4', img: 'https://via.placeholder.com/100x100.png?text=4' },
-    { name: 'card5', img: 'https://via.placeholder.com/100x100.png?text=5' },
-    { name: 'card6', img: 'https://via.placeholder.com/100x100.png?text=6' },
-    { name: 'card7', img: 'https://via.placeholder.com/100x100.png?text=7' },
-    { name: 'card8', img: 'https://via.placeholder.com/100x100.png?text=8' },
+    { name: 'card1', img: 'https://images.pexels.com/photos/22608405/pexels-photo-22608405/free-photo-of-flores-plantas-rosas-barandillas.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' },
+    { name: 'card2', img: 'https://images.pexels.com/photos/22608405/pexels-photo-22608405/free-photo-of-flores-plantas-rosas-barandillas.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' },
+    { name: 'card3', img: 'https://images.pexels.com/photos/22608405/pexels-photo-22608405/free-photo-of-flores-plantas-rosas-barandillas.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' },
+    { name: 'card4', img: 'https://images.pexels.com/photos/22608405/pexels-photo-22608405/free-photo-of-flores-plantas-rosas-barandillas.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' },
+    { name: 'card5', img: 'https://images.pexels.com/photos/22608405/pexels-photo-22608405/free-photo-of-flores-plantas-rosas-barandillas.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' },
+    { name: 'card6', img: 'https://images.pexels.com/photos/22608405/pexels-photo-22608405/free-photo-of-flores-plantas-rosas-barandillas.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' },
+    { name: 'card7', img: 'https://images.pexels.com/photos/22608405/pexels-photo-22608405/free-photo-of-flores-plantas-rosas-barandillas.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' },
+    { name: 'card8', img: 'https://images.pexels.com/photos/22608405/pexels-photo-22608405/free-photo-of-flores-plantas-rosas-barandillas.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' },
 ];
 
 const gameGrid = cardsArray.concat(cardsArray).sort(() => 0.5 - Math.random());
@@ -24,7 +24,7 @@ let matches = 0;
 let timer;
 let seconds = 0;
 
-//contador de movimientos y temporizador al DOM
+
 movesCounter.textContent = `Movimientos: ${moves}`;
 timerDisplay.textContent = `Tiempo: 00:00`;
 victoryMessage.classList.add('victory-message');
@@ -33,7 +33,7 @@ victoryMessage.style.display = 'none';
 document.body.prepend(movesCounter, timerDisplay);
 document.body.appendChild(victoryMessage);
 
-//iniciar el temporizador
+
 function startTimer() {
     timer = setInterval(() => {
         seconds++;
@@ -43,7 +43,7 @@ function startTimer() {
     }, 1000);
 }
 
-//detener el temporizador
+
 function stopTimer() {
     clearInterval(timer);
 }
@@ -71,7 +71,7 @@ function flipCard() {
 
     if (!firstCard) {
         firstCard = this;
-        if (moves === 0) startTimer(); // Iniciar el temporizador en el primer movimiento
+        if (moves === 0) startTimer();
         return;
     }
 
