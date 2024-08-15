@@ -1,12 +1,12 @@
 const cardsArray = [
-    { name: 'card1', img: 'https://images.pexels.com/photos/22608405/pexels-photo-22608405/free-photo-of-flores-plantas-rosas-barandillas.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' },
-    { name: 'card2', img: 'https://images.pexels.com/photos/22608405/pexels-photo-22608405/free-photo-of-flores-plantas-rosas-barandillas.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' },
-    { name: 'card3', img: 'https://images.pexels.com/photos/22608405/pexels-photo-22608405/free-photo-of-flores-plantas-rosas-barandillas.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' },
-    { name: 'card4', img: 'https://images.pexels.com/photos/22608405/pexels-photo-22608405/free-photo-of-flores-plantas-rosas-barandillas.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' },
-    { name: 'card5', img: 'https://images.pexels.com/photos/22608405/pexels-photo-22608405/free-photo-of-flores-plantas-rosas-barandillas.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' },
-    { name: 'card6', img: 'https://images.pexels.com/photos/22608405/pexels-photo-22608405/free-photo-of-flores-plantas-rosas-barandillas.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' },
-    { name: 'card7', img: 'https://images.pexels.com/photos/22608405/pexels-photo-22608405/free-photo-of-flores-plantas-rosas-barandillas.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' },
-    { name: 'card8', img: 'https://images.pexels.com/photos/22608405/pexels-photo-22608405/free-photo-of-flores-plantas-rosas-barandillas.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' },
+    { name: 'card1', img: 'https://via.placeholder.com/100x100.png?text=1' },
+    { name: 'card2', img: 'https://via.placeholder.com/100x100.png?text=2' },
+    { name: 'card3', img: 'https://via.placeholder.com/100x100.png?text=3' },
+    { name: 'card4', img: 'https://via.placeholder.com/100x100.png?text=4' },
+    { name: 'card5', img: 'https://via.placeholder.com/100x100.png?text=5' },
+    { name: 'card6', img: 'https://via.placeholder.com/100x100.png?text=6' },
+    { name: 'card7', img: 'https://via.placeholder.com/100x100.png?text=7' },
+    { name: 'card8', img: 'https://via.placeholder.com/100x100.png?text=8' },
 ];
 
 const gameGrid = cardsArray.concat(cardsArray).sort(() => 0.5 - Math.random());
