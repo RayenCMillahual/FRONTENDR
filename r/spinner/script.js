@@ -7,10 +7,9 @@ button.addEventListener('click', function() {
     button.textContent = 'Procesando...';
     button.disabled = true;
 
-    // Mostrar el spinner con animación
     spinner.classList.add('show-spinner');
 
-    // Inicializar contador a 3 segu
+    // contador a 3 segu
     let timeLeft = 3;
     countdown.textContent = `Tiempo restante: ${timeLeft} segundos`;
 
