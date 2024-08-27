@@ -1,0 +1,16 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+#usuariosContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.usuario {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
