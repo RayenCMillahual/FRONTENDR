@@ -1,20 +1,18 @@
-// Función para obtener y mostrar los datos del JSON
+// obtener y mostrar los datos del JSON
 fetch('data.json')
     .then(response => response.json())
     .then(data => {
-        const usuariosContainer = document.getElementById('usuariosContainer');
-        // Recorremos el array de usuarios y creamos elementos HTML para cada uno
-        data.usuarios.forEach(usuario => {
-            const usuarioDiv = document.createElement('div');
-            usuarioDiv.classList.add('usuario');
-            // Añadir contenido al div
-            usuarioDiv.innerHTML = `
-                <h2>${usuario.nombre}</h2>
-                <p>Email: ${usuario.email}</p>
-                <p>Edad: ${usuario.edad}</p>
+        const personajesContainer = document.getElementById('personajesContainer');
+
+        // Recorremos el array de personajes y creamos elementos HTML para cada uno
+        data.personajes.forEach(personaje => {
+            const personajeDiv = document.createElement('div');
+            personajeDiv.classList.add('personaje');
+            personajeDiv.innerHTML = `
+                <h2>${personaje.nombre}</h2>
+                <p>Casa: ${personaje.casa}</p>
             `;
-            // Añadir el div al contenedor
-            usuariosContainer.appendChild(usuarioDiv);
+            personajesContainer.appendChild(personajeDiv);
         });
     })
     .catch(error => console.error('Error al cargar el archivo JSON:', error));
