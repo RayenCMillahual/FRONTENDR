@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 900px;
+    background: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Animaciones y transiciones */
+.form-container {
+    padding: 40px;
+    transition: transform 0.6s ease-in-out;
+    width: 100%;
+}
+
+.login-container {
+    transform: translateX(0);
+}
+
+.register-container {
+    transform: translateX(100%);
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .login-container, .register-container {
+        transform: translateX(0);
+    }
+}
